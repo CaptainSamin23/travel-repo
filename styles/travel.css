@@ -1,0 +1,162 @@
+/* header */
+header{
+    padding: 50px 240px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    gap: 16px;
+}
+.logo img{
+    width: 48px;
+    height: 56.008px;
+    flex-shrink: 0;
+    margin-top: 30px;
+}
+.nav-title{
+    width: 201px;
+    height: 45px;
+    font-family: Mulish;
+    font-size: 36px;
+    font-weight: 800;
+}
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+nav li a{
+    text-decoration: none;
+    color:  #424242;
+}
+.banner{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.banner-content{
+    position: relative;
+}
+.banner-content img{
+    display: flex;
+    width: 85%;
+}
+.banner-title{
+    display: flex;
+    width: 596px;
+    position: absolute;
+    left: 30%;
+    top: 15%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.banner-description{
+    display: flex;
+    width: 676px;
+    position: absolute;
+    left: 15%;
+    top: 28%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.form{
+    display: flex;
+    width: 676px;
+    position: absolute;
+    left: 15%;
+    top: 55%;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    gap: 24px;
+}
+.form-1{
+    width: 150px;
+    height: 20px;
+    border-radius: 8px;
+    background: #FFF;
+}
+.form-2{
+    width: 170px;
+    height: 25px;
+    border-radius: 8px;
+    background: #FFF;
+}
+.form-3{
+    width: 170px;
+    height: 25px;
+    border-radius: 8px;
+    background: #FFF;
+}
+.form-4{
+    width: 170px;
+    height: 25px;
+    border-radius: 8px;
+    background: #FF5400;
+}
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav, .banner, .banner-content, .banner-description, .banner-title{ 
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column;
+        width: 335px;
+        height: 483px;
+        flex-shrink: 0;
+        border-radius: 16px;
+    }
+    .banner img{
+        flex-direction: column;
+        width: 435px;
+        height: 483px;
+        border-radius: 16px;
+        background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    }
+    .banner-description{
+        flex-direction: column;
+        width: 250px;
+        height: 60px;
+        color: #FFF;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px; /* 150% */
+    }
+    .banner-title{
+        flex-direction: column;
+        width: 205px;
+        color: #FFF;
+        font-size: 22px;
+        font-weight: 800;
+    }
+    .form{
+        flex-direction: column;
+        width: 187px;
+        display: flex;
+        /* width: 287px; */
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        /* gap: 16px; */
+    }
+    .form-1, .form-2, .form-3, .form-4{
+        flex-direction: column;
+        width: 150px;
+        flex-shrink: 0;
+        border-radius: 8px;
+    }
+    
+}
